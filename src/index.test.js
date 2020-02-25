@@ -5,5 +5,3 @@ describe('Test suit', () => {
     expect(typeof HelloWorld).toBe('function')
   })
 })
-
-export default HelloWorld
