@@ -1,0 +1,18 @@
+{
+  "extends": ["@bence.a.toth/eslint-config"],
+  "overrides": [
+    {
+      "files": ["webpack.config.js"],
+      "rules": {
+        "fp/no-mutation": 0,
+        "import/no-unused-modules": 0
+      }
+    },
+    {
+      "files": ["*.stories.js", "*.stories.jsx"],
+      "rules": {
+        "import/no-unused-modules": 0
+      }
+    }
+  ]
+}
