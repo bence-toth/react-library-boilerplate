@@ -4,6 +4,7 @@
   "description": "React library boilerplate",
   "main": "dist/main.js",
   "scripts": {
+    "start": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production"
   },
