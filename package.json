@@ -1,24 +1,11 @@
 {
-  "name": "react-library-boilerplate",
-  "version": "1.0.0",
-  "description": "React library boilerplate",
-  "main": "dist/main.js",
   "scripts": {
     "start": "start-storybook -p 6006",
     "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bence-toth/react-library-boilerplate.git"
-  },
-  "author": "Bence A. Toth <tothab@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bence-toth/react-library-boilerplate/issues"
-  },
-  "homepage": "https://github.com/bence-toth/react-library-boilerplate#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
@@ -33,6 +20,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
+    "jest": "^25.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "webpack": "^4.41.6",
@@ -42,9 +30,5 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "dependencies": {},
-  "files": [
-    "README.md",
-    "dist"
-  ]
+  "dependencies": {}
 }
