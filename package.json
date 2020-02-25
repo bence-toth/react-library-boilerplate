@@ -1,0 +1,26 @@
+{
+  "name": "react-library-boilerplate",
+  "version": "1.0.0",
+  "description": "React library boilerplate",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bence-toth/react-library-boilerplate.git"
+  },
+  "author": "Bence A. Toth <tothab@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bence-toth/react-library-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bence-toth/react-library-boilerplate#readme",
+  "devDependencies": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "files": [
+    "README.md",
+    "dist"
+  ]
+}
