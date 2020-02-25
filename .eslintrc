@@ -1,0 +1,3 @@
+{
+  "extends": ["@bence.a.toth/eslint-config"]
+}
