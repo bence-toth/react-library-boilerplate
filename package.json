@@ -2,6 +2,7 @@
   "scripts": {
     "start": "start-storybook -p 6006",
     "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
+    "stylelint": "npx stylelint \"./src/**/*.css\"",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "build": "webpack --mode production"
