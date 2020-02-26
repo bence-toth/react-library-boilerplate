@@ -16,6 +16,7 @@
     "@babel/preset-react": "^7.8.3",
     "@bence.a.toth/eslint-config": "^1.0.10",
     "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
     "@storybook/addon-links": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/react": "^5.3.14",
