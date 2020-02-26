@@ -5,7 +5,11 @@ module.exports = {
         // Process all js and jsx
         // files with Babel
         test: /\.(js|jsx)$/,
-        exclude: [/node_modules/],
+        exclude: [
+          /node_modules/,
+          /\.stories\.(js|jsx)$/,
+          /\.test\.(js|jsx)$/
+        ],
         use: {
           loader: 'babel-loader'
         }
