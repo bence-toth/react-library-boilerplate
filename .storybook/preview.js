@@ -11,28 +11,23 @@ addParameters({
     },
     {
       name: 'Almost white',
-      value: gray(95),
-      default: true
+      value: gray(95)
     },
     {
       name: 'Light gray',
-      value: gray(75),
-      default: true
+      value: gray(75)
     },
     {
       name: 'Gray',
-      value: gray(50),
-      default: true
+      value: gray(50)
     },
     {
       name: 'Dark gray',
-      value: gray(25),
-      default: true
+      value: gray(25)
     },
     {
       name: 'Almost black',
-      value: gray(5),
-      default: true
+      value: gray(5)
     },
     {
       name: 'Black',
