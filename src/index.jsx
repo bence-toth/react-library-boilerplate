@@ -4,7 +4,7 @@ import {string} from 'prop-types'
 import './index.css'
 
 const HelloWorld = ({
-  name = 'John Doe'
+  name
 }) => (
   <p className='helloWorld'>
     {'Hello, '}
