@@ -1,11 +1,23 @@
 import React from 'react'
+import {string} from 'prop-types'
 
 import './index.css'
 
-const HelloWorld = () => (
+const HelloWorld = ({
+  name = 'John Doe'
+}) => (
   <p className='helloWorld'>
-    Hello World
+    {'Hello, '}
+    {name}
   </p>
 )
+
+HelloWorld.propTypes = {
+  name: string
+}
+
+HelloWorld.defaultProps = {
+  name: 'John Doe'
+}
 
 export default HelloWorld
