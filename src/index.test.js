@@ -7,10 +7,13 @@ import HelloWorld from './index'
 
 import './index.css'
 
-describe('Test suit', () => {
-  it('Should say "Hello World"', () => {
+describe('HelloWorld component', () => {
+  it('Should say hello', () => {
+    render(<HelloWorld name='Jane Doe' />)
+    expect(screen.getByText('Hello, Jane Doe')).toBeInTheDocument()
+  })
+  it('Should fall back to default name', () => {
     render(<HelloWorld />)
-    expect(typeof HelloWorld).toBe('function')
-    expect(screen.getByText('Hello World')).toBeInTheDocument()
+    expect(screen.getByText('Hello, John Doe')).toBeInTheDocument()
   })
 })
