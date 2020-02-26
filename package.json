@@ -3,6 +3,7 @@
     "start": "start-storybook -p 6006",
     "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "build": "webpack --mode production"
   },
   "license": "MIT",
