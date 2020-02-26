@@ -7,14 +7,14 @@
         "jest.config.js"
       ],
       "rules": {
-        "fp/no-mutation": 0,
         "import/no-unused-modules": 0
       }
     },
     {
       "files": ["*.stories.jsx"],
       "rules": {
-        "import/no-unused-modules": 0
+        "import/no-unused-modules": 0,
+        "import/no-extraneous-dependencies": 0
       }
     },
     {
