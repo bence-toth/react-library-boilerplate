@@ -1,40 +1,42 @@
 import {addParameters} from '@storybook/react'
 
+const gray = percentage =>`hsl(0, 0%, ${percentage}%)`
+
 addParameters({
   backgrounds: [
     {
       name: 'White',
-      value: 'hsl(0, 0%, 100%)',
+      value: gray(100),
       default: true
     },
     {
       name: 'Almost white',
-      value: 'hsl(0, 0%, 95%)',
+      value: gray(95),
       default: true
     },
     {
       name: 'Light gray',
-      value: 'hsl(0, 0%, 75%)',
+      value: gray(75),
       default: true
     },
     {
       name: 'Gray',
-      value: 'hsl(0, 0%, 50%)',
+      value: gray(50),
       default: true
     },
     {
       name: 'Dark gray',
-      value: 'hsl(0, 0%, 25%)',
+      value: gray(25),
       default: true
     },
     {
       name: 'Almost black',
-      value: 'hsl(0, 0%, 5%)',
+      value: gray(5),
       default: true
     },
     {
       name: 'Black',
-      value: 'hsl(0, 0%, 0%)'
+      value: gray(0)
     }
   ]
 })
