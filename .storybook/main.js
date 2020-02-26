@@ -3,7 +3,8 @@ module.exports = {
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-links',
-    '@storybook/addon-knobs/register'
+    '@storybook/addon-knobs/register',
+    '@storybook/addon-backgrounds/register'
   ],
   webpackFinal: async config => {
     // You can customize Storybook's Webpack config here.
