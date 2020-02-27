@@ -3,7 +3,7 @@ import {imageSnapshot} from '@storybook/addon-storyshots-puppeteer'
 
 const storybookUrl = (
   (process.env.CI === 'true')
-    ? `file://${__dirname}/storybook-dist`
+    ? `file://${process.cwd()}/storybook-dist`
     : 'http://localhost:6006/'
 )
 
