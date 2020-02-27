@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Hello World Default 1`] = `
+<p
+  className="helloWorld"
+>
+  Hello, 
+  John Doe
+</p>
+`;
