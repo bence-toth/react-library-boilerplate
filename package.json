@@ -6,8 +6,7 @@
     "lint": "npm run eslint ; npm run stylelint",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "build": "webpack --mode production",
-    "build:storybook": "build-storybook -c .storybook -o storybook-dist"
+    "build": "webpack --mode production"
   },
   "license": "MIT",
   "devDependencies": {
