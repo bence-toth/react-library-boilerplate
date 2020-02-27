@@ -9,3 +9,10 @@ if (process.env.CI !== 'true') {
     })
   })
 }
+else {
+  describe('Visual snapshots', () => {
+    it('are disabled due to font smoothing issues', () => {
+      expect(true).toBe(true)
+    })
+  })
+}
