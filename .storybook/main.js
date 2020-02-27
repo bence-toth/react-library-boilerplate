@@ -5,7 +5,8 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-knobs/register',
     '@storybook/addon-backgrounds/register',
-    '@storybook/addon-storysource'
+    '@storybook/addon-storysource',
+    '@storybook/addon-a11y/register'
   ],
   webpackFinal: async config => {
     // You can customize Storybook's Webpack config here.
