@@ -7,6 +7,7 @@ const storybookUrl = (
     : 'http://localhost:6006/'
 )
 
+
 initStoryshots({
   suite: 'Visual snapshots',
   test: imageSnapshot({
