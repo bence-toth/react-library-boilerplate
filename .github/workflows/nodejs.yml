@@ -19,7 +19,7 @@ jobs:
     - run: npm install
     - run: npm run lint
     - run: npm run build:storybook
-    - run: npm test
+    - run: CI=true npm test
     - run: base64 /home/runner/work/react-library-boilerplate/react-library-boilerplate/__image_snapshots__/__diff_output__/*.png
     - run: npm run build
       env:
