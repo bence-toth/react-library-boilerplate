@@ -8,6 +8,7 @@
     "test:watch": "jest --watchAll",
     "test:gui": "npx majestic",
     "test:coverage": "jest --coverage",
+    "proofread": "npx alex",
     "build": "webpack --mode production",
     "update": "npx npm-check -u"
   },
