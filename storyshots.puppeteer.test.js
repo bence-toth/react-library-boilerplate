@@ -7,9 +7,14 @@ const storybookUrl = (
     : 'http://localhost:6006/'
 )
 
+const getScreenshotOptions = () => ({
+  fullPage: false
+})
+
 initStoryshots({
   suite: 'Visual snapshots',
   test: imageSnapshot({
-    storybookUrl
+    storybookUrl,
+    getScreenshotOptions
   })
 })
