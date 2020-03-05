@@ -11,11 +11,11 @@
 
 - `npm test`
 
-  Runs Jest:
-    - unit tests
-    - integration tests
-    - structural snapshot tests with `storyshots`
-    - visual snapshot tests with `storyshots-puppeteer`
+  Runs tests:
+    - unit tests with `jest`,
+    - integration tests with `react-testing-library`,
+    - structural snapshot tests with `storyshots`,
+    - visual snapshot tests with `storyshots-puppeteer`.
 
   To run Jest in watch mode, run `npm run test:watch`.
 
