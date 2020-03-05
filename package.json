@@ -1,18 +1,17 @@
 {
   "scripts": {
     "start": "start-storybook -p 6006",
-    "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
-    "stylelint": "npx stylelint \"./src/**/*.css\"",
-    "lint": "npm run eslint ; npm run stylelint",
+    "build": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:gui": "npx majestic",
     "test:coverage": "jest --coverage",
+    "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
+    "stylelint": "npx stylelint \"./src/**/*.css\"",
+    "lint": "npm run eslint ; npm run stylelint",
     "proofread": "npx alex",
-    "build": "webpack --mode production",
     "update": "npx npm-check -u"
   },
-  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
@@ -51,5 +50,6 @@
     "react": ">= 16.12.0",
     "react-dom": ">= 16.12.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "license": "MIT"
 }
