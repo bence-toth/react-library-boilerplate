@@ -21,7 +21,7 @@
 
   To run Jest with a browser UI, run `npm run test:gui`.
 
-  To generate test coverage, run `npm run test:watch`.
+  To generate test coverage, run `npm run test:coverage`.
 
 - `npm run lint`
 
