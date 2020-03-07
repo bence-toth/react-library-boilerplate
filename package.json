@@ -1,4 +1,9 @@
 {
+  "name": "react-library-boilerplate",
+  "version": "1.0.0",
+  "description": "Feature-rich boilerplate for React libraries",
+  "keywords": ["react", "boilerplate"],
+  "license": "MIT",
   "scripts": {
     "start": "start-storybook -p 6006",
     "build": "webpack --mode production",
@@ -11,6 +16,18 @@
     "lint": "npm run eslint ; npm run stylelint",
     "proofread": "npx alex",
     "update": "npx npm-check -u"
+  },
+  "author": {
+    "name": "Bence A. Toth",
+    "email": "tothab@gmail.com"
+  },
+  "homepage": "https://github.com/bence-toth/react-library-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bence-toth/react-library-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bence-toth/react-library-boilerplate/issues"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -51,5 +68,11 @@
     "react-dom": ">= 16.12.0"
   },
   "dependencies": {},
-  "license": "MIT"
+  "main": "dist/main.js",
+  "files": [
+    "dist/main.js",
+    "README.md",
+    "LICENSE",
+    "changelog.md"
+  ]
 }
