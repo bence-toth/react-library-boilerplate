@@ -1,6 +1,13 @@
 {
   "presets": [
+    // Use `preset-env` for latest ES features.
+    // Read more:
+    // https://babeljs.io/docs/en/babel-preset-env
     "@babel/preset-env",
+
+    // Use `preset-react` for transforming JSX.
+    // Read more:
+    // https://babeljs.io/docs/en/babel-preset-react
     "@babel/preset-react"
   ]
 }
