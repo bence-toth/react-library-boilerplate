@@ -10,6 +10,7 @@
   "scripts": {
     "start": "start-storybook -p 6006",
     "build": "webpack --mode production",
+    "build:storybook": "build-storybook -c .storybook -o ./.storybook/dist",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:gui": "majestic",
