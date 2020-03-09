@@ -1,5 +1,5 @@
 module.exports = {
-  // This is the main configuration file for Storybook
+  // This is the main configuration file for Storybook.
   // Read more:
   // https://storybook.js.org/docs/basics/introduction/
 

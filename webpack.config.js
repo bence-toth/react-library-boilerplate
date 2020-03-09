@@ -7,7 +7,7 @@ module.exports = {
     rules: [
       {
         // Process all `js` and `jsx`
-        // imports with Babel
+        // imports with Babel.
         test: /\.(js|jsx)$/,
         exclude: [
           /node_modules/,
@@ -20,19 +20,21 @@ module.exports = {
       },
       {
         // Load all `css` imports
-        // with `style-loader` and `css-loader`
+        // with `style-loader` and `css-loader`.
         test: /\.css$/i,
         use: ['style-loader', 'css-loader']
       }
     ]
   },
+
   resolve: {
     // Look for `index.js` first,
-    // then fall back to `index.jsx`
+    // then fall back to `index.jsx`.
     extensions: ['.js', '.jsx']
   },
+
   output: {
-    // Main module will have a default export
+    // Main module will have a default export.
     libraryTarget: 'umd'
   }
 }
