@@ -2,7 +2,7 @@
 # Read more:
 # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
 
-name: Node.js CI
+name: Continuous integration pipeline
 
 on: [push]
 
