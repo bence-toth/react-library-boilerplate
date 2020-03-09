@@ -1,9 +1,13 @@
+// This is Webpack's configuration file.
+// Read more:
+// https://webpack.js.org/configuration/
+
 module.exports = {
   module: {
     rules: [
       {
-        // Process all js and jsx
-        // files with Babel
+        // Process all `js` and `jsx`
+        // imports with Babel
         test: /\.(js|jsx)$/,
         exclude: [
           /node_modules/,
@@ -15,16 +19,16 @@ module.exports = {
         }
       },
       {
-        // Load all css imports
-        // with style-loader and css-loader
+        // Load all `css` imports
+        // with `style-loader` and `css-loader`
         test: /\.css$/i,
         use: ['style-loader', 'css-loader']
       }
     ]
   },
   resolve: {
-    // Look for index.js first,
-    // then fall back to index.jsx
+    // Look for `index.js` first,
+    // then fall back to `index.jsx`
     extensions: ['.js', '.jsx']
   },
   output: {
