@@ -1,11 +1,15 @@
+// This is a test file for Jest using React testing library.
+
+// Read more:
+// https://jestjs.io/
+// https://testing-library.com/docs/react-testing-library/intro
+
 import '@testing-library/jest-dom'
 
 import React from 'react'
 import {render, screen} from '@testing-library/react'
 
 import HelloWorld from './index'
-
-import './index.css'
 
 describe('HelloWorld component', () => {
   it('Should say hello', () => {
