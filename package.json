@@ -17,7 +17,7 @@
     "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
     "stylelint": "npx stylelint \"./src/**/*.css\"",
     "lint": "npm run eslint ; npm run stylelint",
-    "proofread": "npx alex",
+    "proofread": "alex",
     "update": "npx npm-check -u"
   },
   "author": {
@@ -49,6 +49,7 @@
     "@storybook/react": "^5.3.14",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.5.0",
+    "alex": "^8.1.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
