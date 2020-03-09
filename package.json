@@ -18,7 +18,7 @@
     "stylelint": "npx stylelint \"./src/**/*.css\"",
     "lint": "npm run eslint ; npm run stylelint",
     "proofread": "alex",
-    "update": "npx npm-check -u"
+    "update": "npm-check -u"
   },
   "author": {
     "name": "Bence A. Toth",
@@ -55,6 +55,7 @@
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
+    "npm-check": "^5.9.2",
     "prop-types": "^15.7.2",
     "puppeteer": "^2.1.1",
     "react": "^16.13.0",
