@@ -4,6 +4,9 @@ const gray = percentage =>`hsl(0, 0%, ${percentage}%)`
 
 addParameters({
   backgrounds: [
+    // Setting up backgrounds for all stories for the Background add-on.
+    // Read more:
+    // https://github.com/storybookjs/storybook/tree/master/addons/backgrounds#usage
     {
       name: 'White',
       value: gray(100),
