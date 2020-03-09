@@ -2,12 +2,14 @@
   // This is the configuration file for ESLint.
   // Read more:
   // https://eslint.org/docs/user-guide/configuring
+
   "extends": [
     // Extend @bence.a.toth's config
     // Read more:
     // https://github.com/bence-toth/eslint-config
     "@bence.a.toth/eslint-config"
   ],
+
   "overrides": [
     {
       // Don't expect config files to be imported.
