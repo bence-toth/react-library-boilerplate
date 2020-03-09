@@ -17,14 +17,14 @@ const HelloWorld = ({
 )
 
 HelloWorld.propTypes = {
-  // Prop types declarations
+  // Prop types declarations.
   // Read more:
   // https://reactjs.org/docs/typechecking-with-proptypes.html
   name: string
 }
 
 HelloWorld.defaultProps = {
-  // Default props
+  // Default props.
   // Read more:
   // https://reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values
   name: 'John Doe'

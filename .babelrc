@@ -1,4 +1,8 @@
 {
+  // This is the configuration file for Babel
+  // Read more:
+  // https://babeljs.io/docs/en/configuration
+
   "presets": [
     // Use `preset-env` for latest ES features.
     // Read more:

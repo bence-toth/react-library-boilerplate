@@ -1,10 +1,11 @@
-
-
 module.exports = {
+  // This is the main configuration file for Storybook
+  // Read more:
+  // https://storybook.js.org/docs/basics/introduction/
+
   stories: [
     // Stories are in the `src` folder,
     // and file names are like `*.stories.jsx`.
-
     // Read more:
     // https://storybook.js.org/docs/basics/writing-stories/#loading-stories
     '../src/**/*.stories.jsx'

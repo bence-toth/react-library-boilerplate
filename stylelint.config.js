@@ -1,4 +1,4 @@
-// This is the configuration file for StyleLint
+// This is the configuration file for StyleLint.
 // Read more:
 // https://stylelint.io/user-guide/configure
 

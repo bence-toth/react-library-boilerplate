@@ -1,8 +1,7 @@
 // This is a test file for Jest using React testing library.
-
 // Read more:
-// https://jestjs.io/
-// https://testing-library.com/docs/react-testing-library/intro
+// - https://jestjs.io/
+// - https://testing-library.com/docs/react-testing-library/intro
 
 import '@testing-library/jest-dom'
 
