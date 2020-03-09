@@ -2,7 +2,10 @@
   "name": "react-library-boilerplate",
   "version": "1.0.0",
   "description": "Feature-rich boilerplate for React libraries",
-  "keywords": ["react", "boilerplate"],
+  "keywords": [
+    "react",
+    "boilerplate"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "start-storybook -p 6006",
