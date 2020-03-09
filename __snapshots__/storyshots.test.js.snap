@@ -2,7 +2,7 @@
 
 exports[`Structural snapshots Hello World Default 1`] = `
 <p
-  className="helloWorld"
+  className="hello world"
 >
   Hello, 
   John Doe

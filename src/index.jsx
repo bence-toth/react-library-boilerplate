@@ -3,6 +3,7 @@
 // to import from the package.
 
 import React from 'react'
+import classNames from 'classnames'
 import {string} from 'prop-types'
 
 import './index.css'
@@ -10,7 +11,7 @@ import './index.css'
 const HelloWorld = ({
   name
 }) => (
-  <p className='helloWorld'>
+  <p className={classNames('hello', 'world')}>
     {'Hello, '}
     {name}
   </p>
