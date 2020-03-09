@@ -16,8 +16,8 @@
     "test:coverage": "jest --coverage",
     "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
     "stylelint": "stylelint \"./src/**/*.css\"",
-    "lint": "npm run eslint ; npm run stylelint",
     "proofread": "alex",
+    "lint": "npm run eslint ; npm run stylelint ; npm run proofread",
     "update": "npm-check -u"
   },
   "author": {

@@ -1,0 +1,71 @@
+# This is a CI file for GitHub Actions.
+# Read more:
+# https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
+name: CI/CD pipeline
+
+on: [push]
+
+jobs:
+  lint:
+    # Runs ESLint, StyleLint, and Alex
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run lint
+      env:
+        CI: true
+
+  test:
+    # Runs Jest
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: CI=true npm test
+      env:
+        CI: true
+
+  build:
+    # Runs `npm build`, generates production build.
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run build
+      env:
+        CI: true
+
+  # Add jobs here, e.g. to run `npm publish`,
+  # or to deploy Storybook
