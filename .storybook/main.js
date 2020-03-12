@@ -31,10 +31,8 @@ module.exports = {
     '@storybook/addon-storysource'
   ],
 
-  webpackFinal: async config => {
-    // You can customize Storybook's Webpack config here.
-    // Read more:
-    // https://storybook.js.org/docs/configurations/custom-webpack-config/
-    return config
-  }
+  // You can customize Storybook's  Webpack config here.
+  // Read more:
+  // https://storybook.js.org/docs/configurations/custom-webpack-config/
+  webpackFinal: async config => config
 }
