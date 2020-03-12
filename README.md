@@ -44,15 +44,42 @@
 
 This is an npm package which uses [semantic versioning](https://docs.npmjs.com/about-semantic-versioning). Before releasing a new version, you have to make sure that you have updated the version number using `npm version`.
 
-When you are releasing a new version, you should add a new entry to [the changelog](./changelog.md) describing what changes were introduced, and providing a migration plan in case of breaking changes.
+When you are releasing a new version, you should add a new entry to [the change log](./changelog.md) describing what changes were introduced, and providing a migration plan in case of breaking changes.
 
 Before you publish a new version package, make sure that the production build is up-to-date by running `npm run build`.
 
 Finally run `npm publish` to publish your package to the npm registry.
 
-
-### TODO: Enable visual snapshot testing
-
 ### TODO: Make Storyshots support refs, portals etc.
+
+
+### Enable visual snapshot testing
+
+In order to enable [visual snapshot testing](https://storybook.js.org/docs/testing/automated-visual-testing/) with StoryShots, first you have to install `@storybook/addon-storyshots-puppeteer`:
+
+```sh
+npm install @storybook/addon-storyshots-puppeteer
+```
+
+Create a new file called `storyshots.puppeteer.test.js` in the root folder of the project (right next to `storyshots.test.js`) with the following content:
+
+```js
+import initStoryshots from '@storybook/addon-storyshots'
+import {imageSnapshot} from '@storybook/addon-storyshots-puppeteer'
+
+initStoryshots({
+  suite: 'Visual snapshots',
+  test: imageSnapshot({
+    storybookUrl: 'http://localhost:6006/'
+  })
+})
+
+```
+
+Finally generate visual snapshots:
+
+```sh
+npm test
+```
 
 ### TODO: Add SCSS support
