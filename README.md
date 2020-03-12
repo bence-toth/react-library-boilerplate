@@ -46,11 +46,9 @@ This is an npm package which uses [semantic versioning](https://docs.npmjs.com/a
 
 When you are releasing a new version, you should add a new entry to [the change log](./changelog.md) describing what changes were introduced, and providing a migration plan in case of breaking changes.
 
-Before you publish a new version package, make sure that the production build is up-to-date by running `npm run build`.
+Before you publish a new package version, make sure that the production build is up-to-date by running `npm run build`.
 
 Finally run `npm publish` to publish your package to the npm registry.
-
-### TODO: Make Storyshots support refs, portals etc.
 
 
 ### Enable visual snapshot testing
@@ -82,4 +80,70 @@ Finally generate visual snapshots:
 npm test
 ```
 
-### TODO: Add SCSS support
+### Add Sass support
+
+To add [Sass support](https://sass-lang.com/), first you have to install `sass-loader` and `node-sass` as development dependencies:
+
+```sh
+npm install sass-loader node-sass --save-dev
+```
+
+You have to add a new rule in the `module.rules` of the webpack configuration file (`webpack.config.js`):
+
+```js
+{
+  // Load all `scss` and `sass`
+  // imports with `style-loader`,
+  // `css-loader`, and `sass-loader`.
+  test: /\.s[ac]ss$/i,
+  use: [
+    // Creates `style` nodes from JS strings
+    'style-loader',
+    // Translates CSS into CommonJS
+    'css-loader',
+    // Compiles Sass to CSS
+    'sass-loader'
+  ]
+}
+```
+
+You will also have to update the webpack configuration of Storybook with the same rule. You can do this by overriding `webpackFinal` in `.storybook/main.js` to merge the new rule with the original Storybook webpack config:
+
+```js
+async config => ({
+  ...config,
+  module: {
+    ...config.module,
+    rules: [
+      ...config.module.rules,
+      {
+        // Load all `scss` and `sass`
+        // imports with `style-loader`,
+        // `css-loader`, and `sass-loader`.
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader'
+        ]
+      }
+    ]
+  }
+})
+```
+
+Finally, you will have to mock `scss` and `sass` imports for Jest. In order to do this, you will have to extend `moduleNameMapper` in the Jest configuration file (`jest.config.js`) with:
+
+```js
+'\\.scss$': '<rootDir>/.jest/mocks/styleMock.js',
+'\\.sass$': '<rootDir>/.jest/mocks/styleMock.js'
+```
+
+With this done, you can finally import `scss` files in `js` and `jsx` files just, like you would do with `css`:
+
+```js
+import './styles.scss'
+```
