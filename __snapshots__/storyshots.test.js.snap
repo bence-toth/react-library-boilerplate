@@ -2,7 +2,7 @@
 
 exports[`Structural snapshots Dummy Component Default 1`] = `
 <article
-  class="dummyComponent"
+  class="dummy component"
 >
   <h1>
     Welcome to your React library boilerplate
@@ -35,7 +35,7 @@ exports[`Structural snapshots Dummy Component Default 1`] = `
 
 exports[`Structural snapshots Dummy Component With Name 1`] = `
 <article
-  class="dummyComponent"
+  class="dummy component"
 >
   <h1>
     Welcome to your React library boilerplate
