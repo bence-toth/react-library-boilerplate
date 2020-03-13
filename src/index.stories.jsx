@@ -10,7 +10,7 @@ import {text, withKnobs} from '@storybook/addon-knobs'
 import DummyComponent from './index'
 
 const story = {
-  title: 'Hello World',
+  title: 'Dummy Component',
   component: DummyComponent,
   decorators: [
     // Adding decorator for Knobs addon.
