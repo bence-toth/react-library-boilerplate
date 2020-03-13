@@ -3,32 +3,53 @@
 // to import from the package.
 
 import React from 'react'
-import classNames from 'classnames'
 import {string} from 'prop-types'
 
 import './index.css'
 
-const HelloWorld = ({
+const DummyComponent = ({
   name
 }) => (
-  <p className={classNames('hello', 'world')}>
-    {'Hello, '}
-    {name}
-  </p>
+  <article className='dummyComponent'>
+    <h1>
+      Welcome to your React library boilerplate
+      {name && (
+        `, ${name}`
+      )}
+    </h1>
+    <p>
+      {'Edit '}
+      <code>src/index.jsx</code>
+      {' and save to reload.'}
+    </p>
+    <p>
+      {'Read '}
+      <code>README.md</code>
+      {' for more info.'}
+    </p>
+    <p>
+      <a
+        href='https://reactjs.org/'
+        target='_blank'
+        rel='noreferrer noopener'
+      >
+        Learn React
+      </a>
+    </p>
+  </article>
 )
 
-HelloWorld.propTypes = {
+DummyComponent.propTypes = {
   // Prop types declarations.
   // Read more:
   // https://reactjs.org/docs/typechecking-with-proptypes.html
   name: string
 }
 
-HelloWorld.defaultProps = {
+DummyComponent.defaultProps = {
   // Default props.
   // Read more:
   // https://reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values
-  name: 'John Doe'
 }
 
-export default HelloWorld
+export default DummyComponent
