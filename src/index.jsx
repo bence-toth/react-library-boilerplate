@@ -3,6 +3,7 @@
 // to import from the package.
 
 import React from 'react'
+import classNames from 'classnames'
 import {string} from 'prop-types'
 
 import './index.css'
@@ -10,7 +11,9 @@ import './index.css'
 const DummyComponent = ({
   name
 }) => (
-  <article className='dummyComponent'>
+  <article
+    className={classNames('dummy', 'component')}
+  >
     <h1>
       Welcome to your React library boilerplate
       {name && (

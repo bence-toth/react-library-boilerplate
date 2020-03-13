@@ -16,20 +16,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.dummyComponent {
+.dummy.component {
   text-align: center;
 }
 
-.dummyComponent h1 {
+.dummy.component h1 {
   font-size: 28px;
 }
 
-.dummyComponent p {
+.dummy.component p {
   font-size: 22px;
   margin: 1em 0;
 }
 
-.dummyComponent code {
+.dummy.component code {
   font-family:
     source-code-pro,
     Menlo,
@@ -41,7 +41,7 @@ body {
   padding: 0.1em 0.4em;
 }
 
-.dummyComponent a {
+.dummy.component a {
   color: hsl(203, 98%, 45%);
   font-weight: bold;
 }
