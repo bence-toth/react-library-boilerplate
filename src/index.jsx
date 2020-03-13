@@ -8,8 +8,6 @@ import {string} from 'prop-types'
 
 import './index.css'
 
-// TODO: Make this screen more informative
-
 const HelloWorld = ({
   name
 }) => (
