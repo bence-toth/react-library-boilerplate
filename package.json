@@ -59,7 +59,6 @@
     "majestic": "^1.6.2",
     "npm-check": "^5.9.2",
     "prop-types": "^15.7.2",
-    "puppeteer": "^2.1.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-test-renderer": "^16.13.0",
