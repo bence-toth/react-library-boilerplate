@@ -1,11 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Structural snapshots Hello World Default 1`] = `
+exports[`Structural snapshots Dummy Component Default 1`] = `
 <article
   class="dummyComponent"
 >
   <h1>
     Welcome to your React library boilerplate
+  </h1>
+  <p>
+    Edit 
+    <code>
+      src/index.jsx
+    </code>
+     and save to reload.
+  </p>
+  <p>
+    Read 
+    <code>
+      README.md
+    </code>
+     for more info.
+  </p>
+  <p>
+    <a
+      href="https://reactjs.org/"
+      rel="noreferrer noopener"
+      target="_blank"
+    >
+      Learn React
+    </a>
+  </p>
+</article>
+`;
+
+exports[`Structural snapshots Dummy Component With Name 1`] = `
+<article
+  class="dummyComponent"
+>
+  <h1>
+    Welcome to your React library boilerplate
+    , John Doe
   </h1>
   <p>
     Edit 
