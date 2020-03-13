@@ -7,11 +7,11 @@ import React from 'react'
 import {withA11y} from '@storybook/addon-a11y'
 import {text, withKnobs} from '@storybook/addon-knobs'
 
-import HelloWorld from './index'
+import DummyComponent from './index'
 
-export default {
+const story = {
   title: 'Hello World',
-  component: HelloWorld,
+  component: DummyComponent,
   decorators: [
     // Adding decorator for Knobs addon.
     // Read more:
@@ -25,8 +25,19 @@ export default {
   ]
 }
 
-export const Default = () => (
-  <HelloWorld
+const Default = () => (
+  <DummyComponent />
+)
+
+const WithName = () => (
+  <DummyComponent
     name={text('Name', 'John Doe')}
   />
 )
+
+export default story
+
+export {
+  Default,
+  WithName
+}
