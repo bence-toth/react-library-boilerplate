@@ -53,10 +53,10 @@ Finally run `npm publish` to publish your package to the npm registry.
 
 ### Enable visual snapshot testing
 
-In order to enable [visual snapshot testing](https://storybook.js.org/docs/testing/automated-visual-testing/) with StoryShots, first you have to install `@storybook/addon-storyshots-puppeteer`:
+In order to enable [visual snapshot testing](https://storybook.js.org/docs/testing/automated-visual-testing/) with StoryShots, first you have to install `puppeteer` and `@storybook/addon-storyshots-puppeteer`:
 
 ```sh
-npm install @storybook/addon-storyshots-puppeteer
+npm install puppeteer @storybook/addon-storyshots-puppeteer
 ```
 
 Create a new file called `storyshots.puppeteer.test.js` in the root folder of the project (right next to `storyshots.test.js`) with the following content:
@@ -142,7 +142,7 @@ Finally, you will have to mock `scss` and `sass` imports for Jest. In order to d
 '\\.sass$': '<rootDir>/.jest/mocks/styleMock.js'
 ```
 
-With this done, you can finally import `scss` files in `js` and `jsx` files just, like you would do with `css`:
+With this done, you can finally import `scss` files in `js` and `jsx` files, exactly like you would do with `css`:
 
 ```js
 import './styles.scss'
