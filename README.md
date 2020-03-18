@@ -1,43 +1,45 @@
 ### Available scripts
 
-- `npm start`
+#### `npm start`
 
-  Runs Storybook.
+Runs [Storybook](https://storybook.js.org/).
 
-  To create a static build of Storybook,
-  run `npm run build:storybook`.
+To create a static build of Storybook, run `npm run build:storybook`.
 
-- `npm build`
 
-  Creates production build which can be published
-  to the npm registry.
+#### `npm build`
 
-- `npm test`
+Creates production build which can be [published to the npm registry](#publishing-a-new-version).
 
-  Runs tests:
-    - unit tests with `jest`,
-    - integration tests with `react-testing-library`,
-    - structural snapshot tests with `storyshots`.
 
-  To run Jest in watch mode, run `npm run test:watch`.
+#### `npm test`
 
-  To run Jest with a browser UI, run `npm run test:gui`.
+Runs tests:
+  - unit tests with [Jest](https://jestjs.io/),
+  - integration tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro),
+  - structural snapshot tests with [StoryShots](https://storybook.js.org/docs/testing/structural-testing/).
 
-  To generate test coverage, run `npm run test:coverage`.
+To run Jest in watch mode, run `npm run test:watch`.
 
-- `npm run lint`
+To run Jest with [a browser UI](https://github.com/Raathigesh/majestic#readme), run `npm run test:gui`.
 
-  Runs ESLint, StyleLint, and Alex sequentially.
+To generate test coverage, run `npm run test:coverage`.
 
-  To run ESLint individually, run `npm run eslint`.
 
-  To run StyleLint individually, run `npm run stylelint`.
+#### `npm run lint`
 
-  To run Alex individually, run `npm run proofread`.
+Runs [ESLint](https://eslint.org/), [StyleLint](https://stylelint.io/), and [Alex](https://github.com/get-alex/alex#readme) sequentially.
 
-- `npm run update`
+To run ESLint individually, run `npm run eslint`.
 
-  Check for package updates interactively.
+To run StyleLint individually, run `npm run stylelint`.
+
+To run Alex individually, run `npm run proofread`.
+
+
+#### `npm run update`
+
+Runs [`npm-check`](https://github.com/dylang/npm-check#readme) to check for package updates interactively.
 
 
 ### Publishing a new version
@@ -51,7 +53,24 @@ Before you publish a new package version, make sure that the production build is
 Finally run `npm publish` to publish your package to the npm registry.
 
 
-### Enable visual snapshot testing
+### Change configuration
+
+#### Configuration files
+
+- **Babel:** `.babelrc`
+
+- **ESLint:** `.eslintrc`
+
+- **Jest:** `jest.config.js`
+
+- **Storybook:** `storybook/main.js` and `storybook/preview.js`
+
+- **StyleLint:** `stylelint.config.js`
+
+- **Webpack:** `webpack.config.js`
+
+
+#### Enable visual snapshot testing
 
 In order to enable [visual snapshot testing](https://storybook.js.org/docs/testing/automated-visual-testing/) with StoryShots, first you have to install `puppeteer` and `@storybook/addon-storyshots-puppeteer`:
 
@@ -80,7 +99,8 @@ Finally generate visual snapshots:
 npm test
 ```
 
-### Add Sass support
+
+#### Add Sass support
 
 To add [Sass support](https://sass-lang.com/), first you have to install `sass-loader` and `node-sass` as development dependencies:
 
@@ -147,3 +167,5 @@ With this done, you can finally import `scss` files in `js` and `jsx` files, exa
 ```js
 import './styles.scss'
 ```
+
+You may also want to update or extend your StyleLint setup for working with Sass.
