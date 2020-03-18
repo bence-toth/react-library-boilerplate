@@ -63,6 +63,8 @@ Finally run `npm publish` to publish your package to the npm registry.
 
 - **Jest:** `jest.config.js`
 
+- **PostCSS** `postcss.config.js`
+
 - **Storybook:** `storybook/main.js` and `storybook/preview.js`
 
 - **StyleLint:** `stylelint.config.js`
@@ -146,6 +148,8 @@ async config => ({
           'style-loader',
           // Translates CSS into CommonJS
           'css-loader',
+          // Autoprefixes CSS
+          'postcss-loader',
           // Compiles Sass to CSS
           'sass-loader'
         ]

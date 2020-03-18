@@ -22,7 +22,14 @@ module.exports = {
         // Load all `css` imports
         // with `style-loader` and `css-loader`.
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Autoprefixes CSS
+          'postcss-loader'
+        ]
       }
     ]
   },

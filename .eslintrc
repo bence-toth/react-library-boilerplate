@@ -15,6 +15,7 @@
       // Don't expect config files to be imported.
       "files": [
         "webpack.config.js",
+        "postcss.config.js",
         "stylelint.config.js",
         "jest.config.js"
       ],
