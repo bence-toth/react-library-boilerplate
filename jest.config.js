@@ -4,7 +4,7 @@
 
 module.exports = {
   collectCoverageFrom: [
-    'src/**/*.{ts,js,jsx}'
+    'src/**/*.{js,jsx}'
   ],
   moduleNameMapper: {
     // Mocking style imports for Jest (do nothing).
