@@ -28,9 +28,9 @@ describe('Dummy component', () => {
       'Edit src/index.jsx and save to reload.',
       'Read README.md for more info.'
     ]
-    const instructionLineElements = instructionLines.map(line =>
+    const instructionLineElements = instructionLines.map(line => (
       screen.getByText(getTextContent(line))
-    )
+    ))
     instructionLineElements.forEach(element => {
       expect(element)
         .toBeInTheDocument()
