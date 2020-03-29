@@ -12,7 +12,7 @@
 
   "overrides": [
     {
-      // Don't expect config files to be imported.
+      // Don't expect config files to get imported.
       "files": [
         "webpack.config.js",
         "postcss.config.js",
@@ -24,7 +24,7 @@
       }
     },
     {
-      // Don't expect stories files to be imported.
+      // Don't expect stories files to get imported.
       "files": ["*.stories.jsx"],
       "rules": {
         "import/no-unused-modules": 0,
@@ -32,7 +32,7 @@
       }
     },
     {
-      // Don't expect test files to be imported.
+      // Don't expect test files to get imported.
       // Allow the usage of JSX in test files.
       "files": ["*.test.js"],
       "rules": {
