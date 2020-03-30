@@ -15,10 +15,10 @@
     "test:watch": "jest --watchAll",
     "test:gui": "majestic",
     "test:coverage": "jest --coverage",
+    "lint": "npm run eslint ; npm run stylelint ; npm run proofread",
     "eslint": "eslint --ignore-path .gitignore --ext .jsx --ext .js .",
     "stylelint": "stylelint \"./src/**/*.css\"",
     "proofread": "alex",
-    "lint": "npm run eslint ; npm run stylelint ; npm run proofread",
     "update": "npm-check -u"
   },
   "author": {
